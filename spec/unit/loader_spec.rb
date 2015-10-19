@@ -19,8 +19,11 @@ EOF
     expect(KnifeThrower.loader(changeset)).to include('environments/bar.json' => 'A')
   end
 
-  it 'matches the changes with their classes' do
-
+  it 'extends functionality by adding classes inside the module ChefObjects' do
+    expect(KnifeThrower.get_regex_by_class).to include(:Roles)
+    expect(KnifeThrower.get_regex_by_class).to include(:Databag)
   end
+
+  it 'maps the change to '
 
 end
