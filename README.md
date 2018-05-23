@@ -6,9 +6,6 @@
 I'm currently using gitlab to host a private chef-repo. Using the gitlabCI
 I'm triggering verification and pre-check
 
-I'd also like to be able to use a Berksfile to drive the creation of 
-new CI jobs to publish each (internal) cookbook from source
-
 ## Using
 
 Trigger this from your CI build on merges to master, or validation of changes in a branch. Feed
@@ -42,3 +39,4 @@ the corresponding required action. Taken from the git-diff manpage:
 ## Patches welcome
 
 Fork it, add some tests under spec/unit, submit a pull request.
+
